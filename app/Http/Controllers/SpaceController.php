@@ -38,7 +38,17 @@ class SpaceController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [
+            'title' => ['required', 'min:3'],
+            'address' => ['required', 'min:5'],
+            'description' => ['required', 'min:10'],
+            'latitude' => ['required'],
+            'longitude' => ['required'],
+        ]);
+
+        $request->user()->spaces()->create($request->all());
+
+        return redirect()->route('space.index')->with('status', 'Space created!');
     }
 
     /**
