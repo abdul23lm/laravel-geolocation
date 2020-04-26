@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Spacephoto extends Model
+class SpacePhoto extends Model
 {
     protected $guarded = [];
 

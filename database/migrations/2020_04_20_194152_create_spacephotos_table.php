@@ -13,7 +13,7 @@ class CreateSpacephotosTable extends Migration
      */
     public function up()
     {
-        Schema::create('spacephotos', function (Blueprint $table) {
+        Schema::create('space_photos', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('space_id');
             $table->string('path');
@@ -30,6 +30,6 @@ class CreateSpacephotosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('spacephotos');
+        Schema::dropIfExists('space_photos');
     }
 }

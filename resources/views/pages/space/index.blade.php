@@ -6,9 +6,9 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             @if (session('status'))
-            <div class="alert alert-success" role="alert">
-                {{ session('status') }}
-            </div>
+                <div class="alert alert-success" role="alert">
+                    {{ session('status') }}
+                </div>
             @endif
 
             @foreach ($spaces as $space)
@@ -25,9 +25,8 @@
                         @endif
                     </h5>
                     <h6 class="card-subtitle">{{ $space->address }}</h6>
-                    <p class="car-text">{{ $space->description }}</p>
+                    <p class="card-text">{{ $space->description }}</p>
                     <a href="#" onclick="openDirection({{ $space->latitude }}, {{ $space->longitude }}, {{ $space->id }})" class="card-link">Direction</a>
-
                 </div>
             </div>
             @endforeach
