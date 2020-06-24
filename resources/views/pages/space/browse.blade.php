@@ -9,7 +9,7 @@
                 <div class="card-header">Browse Codespace</div>
 
                 <div class="card-body">
-                    <div style="height: 4500px" id="mapContainer"></div>
+                    <div style="height: 500px" id="mapContainer"></div>
                 </div>
             </div>
         </div>
