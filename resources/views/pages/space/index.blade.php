@@ -33,7 +33,7 @@
         </div>
     </div>
     <div class="row justify-content-center">
-        {{ $spaces->link() }}
+        {{ $spaces->links() }}
     </div>
 </div>
 @endsection
