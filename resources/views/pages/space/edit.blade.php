@@ -23,7 +23,7 @@
                         <label for="">Address</label>
                         {!! Form::textarea('address', null, [
                             'class' => $errors->has('address') ? 'form-control is-invalid' : 'form-control',
-                            'cols' => "12",
+                            'cols' => "10",
                             'rows' => "3"
                         ]) !!}
                         @error('address')
